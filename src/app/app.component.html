@@ -21,22 +21,24 @@
           I've got an HTML heading, and a select callback. Pretty cool!
         </tab>
       </tabset>
-    </div><!-- /col -->
-    <div>
-      {{languaje}}
     </div>
-
-    
-  </div>
-  
-    <div class="btn-group" dropdown>
-      <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+    <!-- /col -->
+    <div class="col-1">
+      <div class="btn-group" dropdown>
+        <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
           Lenguaje <span class="caret"></span>
         </button>
-      <ul *dropdownMenu class="dropdown-menu" role="menu">
-        <li role="menuitem"><a class="dropdown-item" href="#">Español</a></li>
-        <li role="menuitem"><a class="dropdown-item" href="#">Ingles</a></li>
-        <li role="menuitem"><a class="dropdown-item" href="#">Frances</a></li>
-      </ul>
+        <ul *dropdownMenu class="dropdown-menu" role="menu">
+          <li role="menuitem"><a class="dropdown-item" (click)="changeLang('es')">{{ "spanish" | translate }}</a></li>
+          <li role="menuitem"><a class="dropdown-item" (click)="changeLang('en')">{{ "english" | translate }}</a></li>
+          <li role="menuitem"><a class="dropdown-item" href="#">Frances</a></li>
+        </ul>
+      </div>
     </div>
-</div><!--==============    /Container    ===================-->
+
+
+  </div>
+
+
+</div>
+<!--==============    /Container    ===================-->
