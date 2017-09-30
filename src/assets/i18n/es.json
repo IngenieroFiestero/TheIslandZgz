@@ -9,6 +9,8 @@
     "minTemp" : "Min. Temp.",
     "maxTemp" : "Max. Temp.",
     "humidity" : "Humedad",
-    "weather" : "Estado del Tiempo",
-    "wind" : "Viento"
+    "weather" : "Clima",
+    "wind" : "Viento",
+    "buses" : "Autobuses Cercanos",
+    "weatherToday" : "Clima Hoy"
 }

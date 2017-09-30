@@ -1,5 +1,6 @@
-<div class="row" *ngIf="datosClima">
-    <div class="col">
+<div class="row">
+    <h1 class="col text-center">{{"weather" | translate}}</h1>
+    <div class="col-12" *ngIf="datosClima">
         <table class="table">
             <thead class="thead-inverse">
                 <tr>
@@ -14,10 +15,10 @@
             <tbody *ngIf="datosClima.list">
                 <tr *ngFor="let element of datosClima.list">
                     <th scope="row">{{element.dt_txt}}</th>
-                    <td>{{element.main.temp_min | kelvin2celsius}}</td>
-                    <td>{{element.main.temp_max | kelvin2celsius}}</td>
-                    <td>{{element.main.humidity}}</td>
-                    <td>{{element.clouds.all}}</td>
+                    <td>{{element.main.temp_min | kelvin2celsius}}°C</td>
+                    <td>{{element.main.temp_max | kelvin2celsius}}°C</td>
+                    <td>{{element.main.humidity}}%</td>
+                    <td>{{element.weather[0].main}}</td>
                     <td>{{element.wind.speed}}</td>
                 </tr>
             </tbody>

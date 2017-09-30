@@ -3,22 +3,12 @@
 
   <div class="row">
     <div class="col">
-      <tabset>
-        <tab heading="Principal">
-          Pagina por defecto
-        </tab>
-        <tab heading="Autobuses Cercanos">
+      <tabset [justified]="true">
+        <tab heading='{{"buses" | translate}}'>
           <bus-component></bus-component>
         </tab>
-        <tab heading="Clima Hoy">
+        <tab heading='{{"weatherToday" | translate}}'>
           <clima-component></clima-component>
-        </tab>
-        <tab heading="Static Title 2">Static content 2</tab>
-        <tab (select)="alertMe()">
-          <template tabHeading>
-            <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Alert!
-          </template>
-          I've got an HTML heading, and a select callback. Pretty cool!
         </tab>
       </tabset>
     </div>

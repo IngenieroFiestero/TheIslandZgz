@@ -10,5 +10,7 @@
     "maxTemp" : "Max. Temp.",
     "humidity" : "Humidity",
     "weather" : "Weather",
-    "wind" : "Wind"
+    "wind" : "Wind",
+    "buses" : "Near Buses",
+    "weatherToday" : "Weather Today"
 }
