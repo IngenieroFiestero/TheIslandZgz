@@ -1,4 +1,14 @@
 {
     "spanish" : "Español",
-    "english" : "Ingles"
+    "english" : "Ingles",
+    "line" : "Linea",
+    "destination" : "Destino",
+    "first" : "Primero",
+    "second" : "Segundo",
+    "hour" : "Hora",
+    "minTemp" : "Min. Temp.",
+    "maxTemp" : "Max. Temp.",
+    "humidity" : "Humedad",
+    "weather" : "Estado del Tiempo",
+    "wind" : "Viento"
 }

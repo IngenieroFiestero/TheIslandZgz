@@ -1,1 +1,26 @@
-{{datosClima}}
+<div class="row" *ngIf="datosClima">
+    <div class="col">
+        <table class="table">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>{{"hour" | translate}}</th>
+                    <th>{{"minTemp" | translate}}</th>
+                    <th>{{"maxTemp" | translate}}</th>
+                    <th>{{"humidity" | translate}}</th>
+                    <th>{{"weather" | translate}}</th>
+                    <th>{{"wind" | translate}}</th>
+                </tr>
+            </thead>
+            <tbody *ngIf="datosClima.list">
+                <tr *ngFor="let element of datosClima.list">
+                    <th scope="row">{{element.dt_txt}}</th>
+                    <td>{{element.main.temp_min | kelvin2celsius}}</td>
+                    <td>{{element.main.temp_max | kelvin2celsius}}</td>
+                    <td>{{element.main.humidity}}</td>
+                    <td>{{element.clouds.all}}</td>
+                    <td>{{element.wind.speed}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

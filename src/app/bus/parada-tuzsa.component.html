@@ -1,4 +1,22 @@
-<div *ngIf="parada">
-    {{parada.title}}
-    {{parada.lastUpdate}}
+<div class="row" *ngIf="parada">
+    <h3 class="col-12">{{parada.title}}</h3>
+    <table class="table col-12">
+        <thead class="thead-inverse">
+            <tr>
+                <th>{{"line" | translate}}</th>
+                <th>{{"destination" | translate}}</th>
+                <th>{{"first" | translate}}</th>
+                <th>{{"second" | translate}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let linea of parada.destinos">
+                <th scope="row">{{linea.linea}}</th>
+                <td>{{linea.destino}}</td>
+                <td>{{linea.primero}}</td>
+                <td>{{linea.segundo}}</td>
+            </tr>
+            <!-- <linea-component *ngFor="let linea of parada.destinos" [linea]="linea"></linea-component> -->
+        </tbody>
+    </table>
 </div>

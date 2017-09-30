@@ -1,4 +1,14 @@
 {
     "spanish" : "Spanish",
-    "english" : "English"
+    "english" : "English",
+    "line" : "Bus Line",
+    "destination" : "Destination",
+    "first" : "First",
+    "second" : "Second",
+    "hour" : "Hour",
+    "minTemp" : "Min. Temp.",
+    "maxTemp" : "Max. Temp.",
+    "humidity" : "Humidity",
+    "weather" : "Weather",
+    "wind" : "Wind"
 }

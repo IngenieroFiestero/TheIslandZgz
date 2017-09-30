@@ -6,10 +6,12 @@ import {HttpClientModule, HttpClient} from '@angular/common/http';
 //Clima
 import { ClimaComponent } from './clima/clima.component';
 import { ClimaService } from './clima/clima.service';
+import { KelvinToCelsius } from './clima/kelvin2celsius.pipe';
 //Bus
 import { BusComponent } from './bus/bus.component';
 import { BusService } from './bus/bus.service';
 import { ParadaComponent } from './bus/parada-tuzsa.component';
+import { LineaComponent } from './bus/linea.component';
 
 //Translate
 import { TranslateModule ,TranslateLoader} from '@ngx-translate/core';
@@ -25,7 +27,9 @@ export function HttpLoaderFactory(http: Http) {
     AppComponent,
     ClimaComponent,
     BusComponent,
-    ParadaComponent
+    ParadaComponent,
+    LineaComponent,
+    KelvinToCelsius
   ],
   imports: [
     HttpClientModule,
