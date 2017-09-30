@@ -1,0 +1,42 @@
+<div class="container">
+  <!--==============    Container    ===================-->
+
+  <div class="row">
+    <div class="col">
+      <tabset>
+        <tab heading="Principal">
+          Pagina por defecto
+        </tab>
+        <tab heading="Autobuses Cercanos">
+          <bus-component></bus-component>
+        </tab>
+        <tab heading="Clima Hoy">
+          <clima-component></clima-component>
+        </tab>
+        <tab heading="Static Title 2">Static content 2</tab>
+        <tab (select)="alertMe()">
+          <template tabHeading>
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Alert!
+          </template>
+          I've got an HTML heading, and a select callback. Pretty cool!
+        </tab>
+      </tabset>
+    </div><!-- /col -->
+    <div>
+      {{languaje}}
+    </div>
+
+    
+  </div>
+  
+    <div class="btn-group" dropdown>
+      <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+          Lenguaje <span class="caret"></span>
+        </button>
+      <ul *dropdownMenu class="dropdown-menu" role="menu">
+        <li role="menuitem"><a class="dropdown-item" href="#">Español</a></li>
+        <li role="menuitem"><a class="dropdown-item" href="#">Ingles</a></li>
+        <li role="menuitem"><a class="dropdown-item" href="#">Frances</a></li>
+      </ul>
+    </div>
+</div><!--==============    /Container    ===================-->
